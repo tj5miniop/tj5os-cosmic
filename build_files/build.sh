@@ -11,6 +11,11 @@ set -ouex pipefail
 
 # tj5os setup scripting (image mode) 
 
+#SeLinux custom kernel configs
+setsbool -p domain_kernel_load_modules on 
+rpm-ostree initramfs enable
+
+
 # Install the CachyOS Kernel
 dnf remove -y kernel kernel-core kernel-modules kernel-modules-core kernel-modules-extra kernel-uki-virt
 dnf -y copr enable bieszczaders/kernel-cachyos-lto
