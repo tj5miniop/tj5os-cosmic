@@ -32,7 +32,7 @@ dnf5 -y copr disable ublue-os/packages
 
 dnf5 -y copr enable xxmitsu/mesa-git
 dnf5 -y update
-dnf5 -y copr diable xxmitsu/mesa-git
+dnf5 -y copr disable xxmitsu/mesa-git
 
 dnf5 -y install flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
