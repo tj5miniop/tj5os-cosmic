@@ -9,8 +9,35 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# this installs a package from fedora repos
-dnf5 install -y tmux 
+# tj5os setup scripting (image mode) 
+
+# Install the CachyOS Kernel
+dnf remove -y kernel kernel-core kernel-modules kernel-modules-core kernel-modules-extra kernel-uki-virt
+dnf -y copr enable bieszczaders/kernel-cachyos-lto
+dnf install -y kernel-cachyos-lto
+dnf -y copr disable bieszczaders/kernel-cachyos-lto
+
+# Install CachyOS Kernel Addons
+dnf -y copr enable bieszczaders/kernel-cachyos-addons
+dnf install -y cachyos-ksm-settings scx-manager scx-scheds
+dnf -y copr disable bieszczaders/kernel-cachyos-addons
+
+#remove firefox
+dnf5 -y remove firefox
+
+# Install bazaar and other apps from ublue 
+dn5 -y copr enable ublue-os/packages
+dnf5 -y install bazaar 
+dn5 -y copr disable ublue-os/packages
+
+dnf5 -y copr enable xxmitsu/mesa-git
+dnf5 -y update
+dnf5 -y copr diable xxmitsu/mesa-git
+
+dnf5 -y install flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+
 
 # Use a COPR Example:
 #
