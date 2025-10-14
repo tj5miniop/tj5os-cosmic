@@ -13,7 +13,6 @@ set -ouex pipefail
 
 #SeLinux custom kernel configs
 setsebool -P domain_kernel_load_modules on
-rpm-ostree initramfs --enable
 
 
 # Install the CachyOS Kernel
