@@ -26,7 +26,7 @@ dnf -y copr disable bieszczaders/kernel-cachyos-addons
 dnf5 -y remove firefox
 
 # Install bazaar and other apps from ublue 
-dn5 -y copr enable ublue-os/packages
+dnf5 -y copr enable ublue-os/packages
 dnf5 -y install bazaar 
 dn5 -y copr disable ublue-os/packages
 
@@ -37,7 +37,10 @@ dnf5 -y copr diable xxmitsu/mesa-git
 dnf5 -y install flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-
+# Install Steam 
+dnf5 -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+dnf5 -y config-manager setopt fedora-cisco-openh264.enabled=1
+dfn5 -y install steam gamescope
 
 # Use a COPR Example:
 #
