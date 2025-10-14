@@ -12,7 +12,7 @@ set -ouex pipefail
 # tj5os setup scripting (image mode) 
 
 #SeLinux custom kernel configs
-setsbool -p domain_kernel_load_modules on 
+setsebool -P domain_kernel_load_modules on
 rpm-ostree initramfs --enable
 
 
