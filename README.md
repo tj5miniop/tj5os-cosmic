@@ -1,6 +1,6 @@
 # tj5os
 
-A personal project, utilising the COSMIC desktop environment from System76. tj5os aims to provide a lean and minimal experience to users while providing everything as well.
+A personal project, utilising the COSMIC desktop environment from System76. tj5os aims to provide a lean and minimal starting point to users. 
 
 Bazaar is installed by default to easily get your favourite applications from flathub
 Automatic updates enabled
