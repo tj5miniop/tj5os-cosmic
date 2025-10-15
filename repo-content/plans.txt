@@ -1,0 +1,5 @@
+- Add COSMIC DOTFILES
+- Switch Librewolf as default browser 
+- Install Heroic Games Launcher
+- Get up-to-date linux firmware
+- Add background(s)
