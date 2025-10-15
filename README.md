@@ -1,5 +1,7 @@
 # tj5os
 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8258e044-252e-4a84-8d1f-bd984563d199" />
+
 A personal project, utilising the COSMIC desktop environment from System76. tj5os aims to provide a lean and minimal starting point to users. 
 
 Bazaar is installed by default to easily get your favourite applications from flathub
