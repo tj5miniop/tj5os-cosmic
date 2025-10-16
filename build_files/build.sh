@@ -29,6 +29,13 @@ dnf -y copr disable bieszczaders/kernel-cachyos-addons
 #remove firefox
 dnf5 -y remove firefox
 
+# install brave browser 
+dnf5 -y install dnf-plugins-core
+
+dnf5 -y config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+
+dnf5 -y install brave-browser
+
 # Install bazaar and other apps from ublue 
 dnf5 -y copr enable ublue-os/packages
 dnf5 -y install bazaar 
