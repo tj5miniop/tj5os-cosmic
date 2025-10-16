@@ -29,14 +29,6 @@ dnf -y copr disable bieszczaders/kernel-cachyos-addons
 #remove firefox
 dnf5 -y remove firefox
 
-#Install Librewolf browser
-# add the repo
-curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos.d/librewolf.repo
-
-# install the package
-sudo dnf install librewolf
-
-
 # Install bazaar and other apps from ublue 
 dnf5 -y copr enable ublue-os/packages
 dnf5 -y install bazaar 
