@@ -29,12 +29,13 @@ dnf -y copr disable bieszczaders/kernel-cachyos-addons
 #remove firefox
 dnf5 -y remove firefox
 
-# install brave browser 
-dnf5 -y install dnf-plugins-core
+#Install Librewolf browser
+# add the repo
+curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos.d/librewolf.repo
 
-dnf5 -y config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+# install the package
+sudo dnf install librewolf
 
-dnf5 -y install brave-browser
 
 # Install bazaar and other apps from ublue 
 dnf5 -y copr enable ublue-os/packages
@@ -59,6 +60,11 @@ dnf5 -y install steam gamescope
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+
+#Dotfiles installation and configurations (will only be used if no .config files for the respecitve apps are in the users home directory)
+#mkdir /usr/share/backgrounds/tj5os-cosmic/43
+#wget -O {wallpaper-name).{fileextenstion} https://raw.githubusercontent.com/pollux78/linuxnext-wallpapers/refs/heads/main/Games/20241128_010441.jpg
+
 
 #### Example for enabling a System Unit File
 
