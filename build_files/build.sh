@@ -34,7 +34,6 @@ mkdir -p /tmp/tj5os-build/
 cd /tmp/tj5os-build
 # Grab Latest Release from devmatteini/dra
 curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/devmatteini/dra/refs/heads/main/install.sh | bash -s -- --to .
-cd dra
 ./dra download --select "brave-browser-{tag}-1.x86_64.rpm" brave/brave-browser
 dnf5 -y install ./*.rpm 
 
