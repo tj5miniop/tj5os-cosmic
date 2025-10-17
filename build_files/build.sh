@@ -30,9 +30,9 @@ dnf -y copr disable bieszczaders/kernel-cachyos-addons
 dnf5 -y remove firefox
 
 #Install relevant icon theme 
-dnf5 -y copr enable hazelbunny/ricing
+dnf5 -y copr enable hazel-bunny/ricing
 dn5 -y install kora-icon-theme
-dnf5 -y copr disable hazelbunny/ricing
+dnf5 -y copr disable hazel-bunny/ricing
 
 
 # Install dra for BUILD PROCESS ONLY
