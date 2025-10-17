@@ -29,6 +29,16 @@ dnf -y copr disable bieszczaders/kernel-cachyos-addons
 #remove firefox
 dnf5 -y remove firefox
 
+# Install dra for BUILD PROCESS ONLY
+mkdir -p /tmp/tj5so-build/
+cd /tmp/tj5os-build
+# Grab Latest Release from devmatteini/dra
+curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/devmatteini/dra/refs/heads/main/install.sh | bash -s -- --to .
+cd dra
+./dra download --select "brave-browser-{tag}-1.x86_64.rpm" brave/brave-browser
+dnf5 -y install ./*.rpm 
+
+
 # Install bazaar and other apps from ublue 
 dnf5 -y copr enable ublue-os/packages
 dnf5 -y install bazaar 
@@ -56,6 +66,11 @@ dnf5 -y install steam gamescope
 #Dotfiles installation and configurations (will only be used if no .config files for the respecitve apps are in the users home directory)
 #mkdir /usr/share/backgrounds/tj5os-cosmic/43
 #wget -O {wallpaper-name).{fileextenstion} https://raw.githubusercontent.com/pollux78/linuxnext-wallpapers/refs/heads/main/Games/20241128_010441.jpg
+
+
+# Cleanup
+cd / 
+rm -rf /tmp/tj5os-build
 
 
 #### Example for enabling a System Unit File
