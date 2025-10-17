@@ -30,7 +30,7 @@ dnf -y copr disable bieszczaders/kernel-cachyos-addons
 dnf5 -y remove firefox
 
 # Install dra for BUILD PROCESS ONLY
-mkdir -p /tmp/tj5so-build/
+mkdir -p /tmp/tj5os-build/
 cd /tmp/tj5os-build
 # Grab Latest Release from devmatteini/dra
 curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/devmatteini/dra/refs/heads/main/install.sh | bash -s -- --to .
