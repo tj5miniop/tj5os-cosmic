@@ -29,6 +29,12 @@ dnf -y copr disable bieszczaders/kernel-cachyos-addons
 #remove firefox
 dnf5 -y remove firefox
 
+#Install relevant icon theme 
+dnf5 -y copr enable hazelbunny/ricing
+dn5 -y install kora-icon-theme
+dnf5 -y copr disable hazelbunny/ricing
+
+
 # Install dra for BUILD PROCESS ONLY
 mkdir -p /tmp/tj5os-build/
 cd /tmp/tj5os-build
