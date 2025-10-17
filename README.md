@@ -8,7 +8,7 @@ Bazaar is installed by default to easily get your favourite applications from fl
 Automatic updates enabled
 Steam + Gamescope installed as well as the CachyOS kernel to get top-notch gaming performance on a stable system
 
-
+NOTICE - BOOTC REBASING MAY NOT WORK DUE TO THE CUSTOM KERNEL. THIS IS BEING WORKED ON
 
 This repository is meant to be a template for building your own custom [bootc](https://github.com/bootc-dev/bootc) image. This template is the recommended way to make customizations to any image published by the Universal Blue Project.
 
