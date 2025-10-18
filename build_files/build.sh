@@ -31,7 +31,7 @@ dnf5 -y remove firefox
 
 #Install relevant icon theme 
 dnf5 -y copr enable hazel-bunny/ricing
-dn5 -y install kora-icon-theme
+dnf5 -y install kora-icon-theme
 dnf5 -y copr disable hazel-bunny/ricing
 
 
