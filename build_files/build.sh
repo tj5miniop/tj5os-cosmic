@@ -56,8 +56,20 @@ dnf5 -y config-manager setopt fedora-cisco-openh264.enabled=1
 #Install Gamescope & Mangohud for steamdeckui support
 dnf5 -y install steam gamescope mangohud
 
+# Download files
+cd /usr/bin
+wget -O gamescope-session https://raw.githubusercontent.com/tj5miniop/tj5os-cosmic/refs/heads/main/system_files/usr/bin/gamescope-session
+wget -O steamos-select-branch https://raw.githubusercontent.com/tj5miniop/tj5os-cosmic/refs/heads/main/system_files/usr/bin/steamos-select-branch
+wget -O steamos-session-select https://raw.githubusercontent.com/tj5miniop/tj5os-cosmic/refs/heads/main/system_files/usr/bin/steamos-session-select
+
+chmod +x *
+
+cd /usr/share/applications
+wget -O deckui.desktop https://raw.githubusercontent.com/tj5miniop/tj5os-cosmic/refs/heads/main/system_files/usr/share/applications/deckui.desktop
 
 
+cd /usr/share/wayland-sessions
+wget -O steamdeckui.desktop https://raw.githubusercontent.com/tj5miniop/tj5os-cosmic/refs/heads/main/system_files/usr/share/wayland-sessions/steamdeckui.desktop 
 #Dotfiles installation and configurations (will only be used if no .config files for the respecitve apps are in the users home directory)
 #mkdir /usr/share/backgrounds/tj5os-cosmic/43
 #wget -O {wallpaper-name).{fileextenstion} https://raw.githubusercontent.com/pollux78/linuxnext-wallpapers/refs/heads/main/Games/20241128_010441.jpg
