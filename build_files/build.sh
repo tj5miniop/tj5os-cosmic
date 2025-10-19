@@ -54,14 +54,10 @@ dnf5 -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release
 dnf5 -y config-manager setopt fedora-cisco-openh264.enabled=1
 dnf5 -y install steam gamescope
 
-# install Nix package manager 
-sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
-
 #Dotfiles installation and configurations (will only be used if no .config files for the respecitve apps are in the users home directory)
 #mkdir /usr/share/backgrounds/tj5os-cosmic/43
 #wget -O {wallpaper-name).{fileextenstion} https://raw.githubusercontent.com/pollux78/linuxnext-wallpapers/refs/heads/main/Games/20241128_010441.jpg
 
 #### Example for enabling a System Unit File
-systemctl enable nix-daemon.service
 systemctl enable podman.socket
 
