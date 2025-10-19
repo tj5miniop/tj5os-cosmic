@@ -56,8 +56,6 @@ dnf5 -y config-manager setopt fedora-cisco-openh264.enabled=1
 #Install Gamescope & Mangohud for steamdeckui support
 dnf5 -y install steam gamescope mangohud
 
-#Install files from ctx dir
-cp -r /ctx/system_files/usr /usr
 
 
 #Dotfiles installation and configurations (will only be used if no .config files for the respecitve apps are in the users home directory)
