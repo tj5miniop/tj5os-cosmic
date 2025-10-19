@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Steam Deck UI Session
+Comment=Launch The SteamDeckUI from within the COSMIC Desktop Environment`
+Exec=gamescope-session
+Type=Application
+DesktopNames=gamescope
+Icon=steam

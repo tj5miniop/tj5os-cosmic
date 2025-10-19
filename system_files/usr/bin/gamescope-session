@@ -1,0 +1,8 @@
+#!/bin/bash
+
+MANGOAPP_OPT=""
+
+if command -v mangoapp &>/dev/null then MANGOAPP_OPT="--mangoapp" fi
+
+
+gamescope $MANGOAPP_OPT -e -- steam -steamdeck -steamos3
