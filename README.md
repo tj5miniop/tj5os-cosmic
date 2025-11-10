@@ -7,7 +7,10 @@ A personal project, utilising the COSMIC desktop environment from System76. tj5o
 Bazaar is installed by default to easily get your favourite applications from flathub
 Automatic updates enabled
 Steam + Gamescope installed as well as the CachyOS kernel to get top-notch gaming performance on a stable system
-
+## Upcoming features
+Faugus Launcher Integration
+LSFG-VK (Lossless Scaling) 
+general optimisations & fedora 43 upgrade
 NOTICE - BOOTC REBASING MAY NOT WORK DUE TO THE CUSTOM KERNEL. THIS IS BEING WORKED ON
 
 This repository is meant to be a template for building your own custom [bootc](https://github.com/bootc-dev/bootc) image. This template is the recommended way to make customizations to any image published by the Universal Blue Project.
