@@ -15,19 +15,11 @@ set -ouex pipefail
 setsebool -P domain_kernel_load_modules on
 
 
-# Install the CachyOS Kernel
-dnf remove -y kernel kernel-core kernel-modules kernel-modules-core kernel-modules-extra kernel-uki-virt
-dnf -y copr enable bieszczaders/kernel-cachyos-lto
-dnf install -y kernel-cachyos-lto
-dnf -y copr disable bieszczaders/kernel-cachyos-lto
-
 # Install CachyOS Kernel Addons
 dnf -y copr enable bieszczaders/kernel-cachyos-addons
 dnf install -y cachyos-ksm-settings scx-manager scx-scheds
 dnf -y copr disable bieszczaders/kernel-cachyos-addons
 
-#remove firefox
-dnf5 -y remove firefox
 
 #Install relevant icon theme 
 dnf5 -y copr enable hazel-bunny/ricing
