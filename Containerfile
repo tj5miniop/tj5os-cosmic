@@ -4,7 +4,7 @@ COPY build_files /
 COPY system_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/cosmic-atomic-main:43 
+FROM ghcr.io/ublue-os/kinoite-main:43 
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
