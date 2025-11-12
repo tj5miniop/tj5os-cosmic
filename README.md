@@ -4,9 +4,11 @@
 
 A personal project based on Bazzite, utilising the KDE plasma desktop environment. tj5os aims to provide a lean and minimal starting point to users. 
 
-Bazaar is installed by default to easily get your favourite applications from flathub
-Automatic updates enabled
-Steam + Gamescope installed as well as the CachyOS kernel to get top-notch gaming performance on a stable system
+### Bazaar is installed by default to easily get your favourite applications from flathub
+
+### Automatic updates enabled
+
+### Steam + Gamescope installed. Gamescope session available in all images (deck image automatically boots to it)
 ## Upcoming features
 Faugus Launcher Integration
 LSFG-VK (Lossless Scaling) 
